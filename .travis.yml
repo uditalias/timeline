@@ -4,14 +4,14 @@ node_js:
   - 12
 
 before_script:
-- npm run tsc
-- npm run build:umd
+  - npm run tsc
+  - npm run build
 
 script:
-- npm run test
+  - npm run test:cov
 
 after_success:
-  
+
 notifications:
   email:
-  - udi.talias@gmail.com
+    - udi.talias@gmail.com
