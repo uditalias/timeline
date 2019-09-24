@@ -12,7 +12,7 @@
     "tsc:watch": "tsc -w",
     "build:umd": "webpack",
     "build": "tsc && npm run build:umd && npm run test:cov",
-    "release": "npm run build && release-it --dry-run"
+    "release": "npm run build && release-it"
   },
   "files": [
     "lib",
