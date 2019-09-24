@@ -1,0 +1,50 @@
+{
+  "name": "@udidu/timeline",
+  "version": "1.0.0",
+  "description": "JavaScript Undo/Redo mechanism with simple API",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:watch": "npm t -- --watch --color --env=jsdom",
+    "tsc": "tsc",
+    "tsc:watch": "tsc -w",
+    "build:umd": "webpack",
+    "build": "tsc && npm run build:umd && npm test:cov",
+    "release": "npm run build && release-it --dry-run"
+  },
+  "files": [
+    "lib",
+    "umd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uditalias/timeline.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Udi Talias",
+    "email": "udi.talias@gmail.com",
+    "url": "https://github.com/uditalias"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uditalias/timeline/issues"
+  },
+  "homepage": "https://github.com/uditalias/timeline#readme",
+  "devDependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.5",
+    "commitify": "1.0.0",
+    "jest": "24.9.0",
+    "release-it": "12.4.1",
+    "ts-jest": "24.1.0",
+    "ts-loader": "6.1.2",
+    "typescript": "3.6.3",
+    "uglifyjs-webpack-plugin": "2.2.0",
+    "webpack": "4.40.2",
+    "webpack-cli": "3.3.9",
+    "webpack-merge": "4.2.2"
+  }
+}
