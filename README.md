@@ -86,6 +86,8 @@ const timeline = new Timeline({
 });
 ```
 
+For your convenience, I created this [**Fiddle**](https://jsfiddle.net/udidu/hcbkzvgj/), so you can take Timeline for a ride.
+
 ---
 
 <h4>License</h4>
