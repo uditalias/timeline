@@ -33,7 +33,7 @@ Minified
 <h4>Usage</h4>
 
 ```javascript
-import Timline from "@udidu/timeline";
+import Timeline from "@udidu/timeline";
 
 const timeline = new Timeline();
 
