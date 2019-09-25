@@ -62,6 +62,27 @@ timeline.hasPast; // false
 timeline.hasFuture; // false
 ```
 
+<h4>Options</h4>
+
+All options are optional
+
+```javascript
+const timeline = new Timeline({
+  // The size of the past queue
+  // default: Infinity
+  size: 5,
+
+  // When calling `setPresent(preset)` the value is passed to this function.
+  // this is good for cases when we want to clone the object before saving it.
+  // default: echo function - returns the same value/reference
+  cloneFn: item => toJS(item),
+
+  // Initialize the present
+  // default: undefined
+  present: 2
+});
+```
+
 ---
 
 <h4>License</h4>
