@@ -1,5 +1,5 @@
 <h1 align=center>Timeline</h1>
-<h3 align=center>JavaScript Undo/Redo mechanism with simple API</h3>
+<h3 align=center>JavaScript Undo/Redo mechanism with simple API < 1KB</h3>
 <p align=center>
 <a href="https://travis-ci.org/uditalias/timeline"><img src="https://travis-ci.org/uditalias/timeline.svg?branch=master" alt="npm version" height="18"></a> <a href="https://badge.fury.io/js/%40udidu%2Ftimeline"><img src="https://badge.fury.io/js/%40udidu%2Ftimeline.svg" alt="npm version" height="18"></a> <img src="https://img.shields.io/bundlephobia/minzip/@udidu/timeline" alt="npm bundle size" height="18">
 </p>
@@ -24,7 +24,7 @@ yarn add @udidu/timeline
 <script src="https://cdn.jsdelivr.net/npm/@udidu/timeline@latest/umd/timeline.js"></script>
 ```
 
-Or
+Minified
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@udidu/timeline@latest/umd/timeline.min.js"></script>
