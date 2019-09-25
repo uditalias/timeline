@@ -137,13 +137,29 @@ describe("Timeline", () => {
     });
 
     it("should not clone the present on set", () => {
-      timeline = new Timeline();
-
       const present = { username: "udidu" };
 
       timeline.setPresent(present);
 
       expect(timeline.present).toBe(present);
+    });
+
+    it("should clear the future on set present", () => {
+      timeline.setPresent(1);
+      timeline.setPresent(2);
+      timeline.undo();
+
+      expect(timeline.hasFuture).toBe(true);
+
+      timeline.setPresent(3);
+
+      expect(timeline.hasFuture).toBe(false);
+    });
+
+    it("should use present from config", () => {
+      timeline = new Timeline({ present: 1 });
+
+      expect(timeline.present).toBe(1);
     });
   });
 });

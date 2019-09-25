@@ -21,6 +21,7 @@ const defaults = <T>(config: ITimelineConfig<T> = {}): ITimelineConfig<T> => {
 export interface ITimelineConfig<T = any> {
   size?: number;
   cloneFn?: (item: T) => T;
+  present?: T;
 }
 
 export default class Timeline<T = any> {
@@ -38,6 +39,12 @@ export default class Timeline<T = any> {
     this._past = new Array();
     this._future = new Array();
     this._config = defaults<T>(config);
+
+    const { present } = this._config;
+
+    if (present) {
+      this.setPresent(present);
+    }
   }
 
   public get hasPast(): boolean {
