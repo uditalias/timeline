@@ -1,6 +1,6 @@
 {
   "name": "@udidu/timeline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript Undo/Redo mechanism with simple API",
   "main": "lib/index.js",
   "typings": "lib/Timeline.d.ts",
