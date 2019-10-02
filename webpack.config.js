@@ -7,18 +7,8 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const destDir = path.join(__dirname, "./umd");
 const contextPath = path.join(__dirname, "./src");
 
-const base = {
-  entry: {
-    umd: "umd.ts"
-  },
-
-  output: {
-    library: ["Timeline"]
-  }
-};
-
 module.exports = [
-  merge(prod({ destDir, contextPath }), base, {
+  merge(prod({ destDir, contextPath }), {
     output: {
       filename: "timeline.js"
     },
@@ -39,7 +29,7 @@ module.exports = [
     }
   }),
 
-  merge(prod({ destDir, contextPath }), base, {
+  merge(prod({ destDir, contextPath }), {
     output: {
       filename: "timeline.min.js"
     }

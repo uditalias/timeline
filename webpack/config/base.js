@@ -11,6 +11,10 @@ module.exports = (
 
     target: "web",
 
+    entry: {
+      umd: "umd.ts"
+    },
+
     resolve: {
       extensions: [".ts", ".tsx", ".js"],
       modules: [config.contextPath, "node_modules"]
@@ -38,6 +42,7 @@ module.exports = (
 
     output: {
       path: config.destDir,
+      library: ["Timeline"],
       libraryTarget: "umd"
     },
 
