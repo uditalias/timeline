@@ -5,6 +5,9 @@ Timeline
 <h3 align=center>JavaScript Undo/Redo mechanism with simple API < 1KB</h3>
 <p align=center>
 <a href="https://travis-ci.org/uditalias/timeline"><img src="https://travis-ci.org/uditalias/timeline.svg?branch=master" alt="npm version" height="18"></a> <a href="https://badge.fury.io/js/%40udidu%2Ftimeline"><img src="https://badge.fury.io/js/%40udidu%2Ftimeline.svg" alt="npm version" height="18"></a> <img src="https://img.shields.io/bundlephobia/minzip/@udidu/timeline" alt="npm bundle size" height="18">
+
+
+<img alt="Langauge" src="http://badge.langauge.io/uditalias/timeline?maxAge=600">
 </p>
 
 <h4>Install</h4>
